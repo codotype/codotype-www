@@ -1,0 +1,1319 @@
+[
+  {
+    "id": "codotype-hackathon-starter",
+    "label": "Sahat's Hackathon Starter",
+    "icon": "https://jaystack.com/wp-content/uploads/2015/12/nodejs-logo-e1497443346889.png",
+    "description": "Codotype generator with Sahat's Hackathon Starter",
+    "tech_tags": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Bootstrap"
+    ],
+    "type_tags": [
+      "Fullstack"
+    ],
+    "self_configuring": false,
+    "project_path": "hackathon_starter",
+    "github_url": "codotype/codotype-hackathon-starter-generator",
+    "version": "0.1.0",
+    "experience": "Intermediate",
+    "official": true,
+    "option_groups": [
+      {
+        "label": "Authorization",
+        "identifier": "authorization",
+        "description": "Configure the User Authorization methods for your app",
+        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "help": "Which sign up methods would you like so support?",
+        "more_info_url": "http://apidocjs.com",
+        "attributes": [
+          {
+            "label": "Facebook",
+            "identifier": "facebook",
+            "type": "BOOLEAN",
+            "default_value": true,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-facebook"
+            },
+            "more_info_url": "http://facebook.com"
+          },
+          {
+            "label": "Twitter",
+            "identifier": "twitter",
+            "type": "BOOLEAN",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-twitter"
+            },
+            "more_info_url": "http://twitter.com"
+          },
+          {
+            "label": "Google",
+            "identifier": "google",
+            "type": "BOOLEAN",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-google"
+            },
+            "more_info_url": "http://google.com"
+          },
+          {
+            "label": "GitHub",
+            "identifier": "github",
+            "type": "BOOLEAN",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-github"
+            },
+            "more_info_url": "http://github.com"
+          },
+          {
+            "label": "LinkedIn",
+            "identifier": "linkedin",
+            "type": "BOOLEAN",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-linkedin"
+            },
+            "more_info_url": "http://linkedin.com"
+          },
+          {
+            "label": "Instagram",
+            "identifier": "instagram",
+            "type": "BOOLEAN",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-instagram"
+            },
+            "more_info_url": "http://instagram.com"
+          }
+        ]
+      },
+      {
+        "label": "API Examples",
+        "identifier": "api_examples",
+        "description": "Configure which API examples are included with your app",
+        "help": "Which API Examples would you like included with your boilerplate?",
+        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "more_info_url": "http://apidocjs.com",
+        "attributes": [
+          {
+            "label": "GitHub API",
+            "identifier": "enable_github_api",
+            "type": "BOOLEAN",
+            "help": "Include dependencies & code to interface with the GitHub API to create and update repositories",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-github"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Twitter API",
+            "identifier": "enable_twitter_api",
+            "type": "BOOLEAN",
+            "help": "Enable Twitter API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-twitter"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Facebook API",
+            "identifier": "enable_facebook_api",
+            "type": "BOOLEAN",
+            "help": "Enable Facebook API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-facebook"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Foursquare API",
+            "identifier": "enable_foursquare_api",
+            "type": "BOOLEAN",
+            "help": "Enable Foursquare API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-foursquare"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Instagram API",
+            "identifier": "enable_instagram_api",
+            "type": "BOOLEAN",
+            "help": "Enable Instagram API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-instagram"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Last.fm API",
+            "identifier": "enable_last_fm_api",
+            "type": "BOOLEAN",
+            "help": "Enable Last.fm API?",
+            "default_value": true,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-last-fm"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "LinkedIn API",
+            "identifier": "enable_linkedin_api",
+            "type": "BOOLEAN",
+            "help": "Enable LinkedIn API?",
+            "default_value": true,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-linkedin"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "New York Times API",
+            "identifier": "enable_new_york_times_api",
+            "type": "BOOLEAN",
+            "help": "Enable New York Times API?",
+            "default_value": true,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fa fa-newspaper"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Steam API",
+            "identifier": "enable_steam_api",
+            "type": "BOOLEAN",
+            "help": "Enable Steam API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-steam"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Stripe API",
+            "identifier": "enable_stripe_api",
+            "type": "BOOLEAN",
+            "help": "Enable Stripe API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-stripe"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "PayPal API",
+            "identifier": "enable_paypal_api",
+            "type": "BOOLEAN",
+            "help": "Enable PayPal API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-paypal"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Twilio API",
+            "identifier": "enable_twilio_api",
+            "type": "BOOLEAN",
+            "help": "Enable Twilio API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-twilio"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Tumblr API",
+            "identifier": "enable_tumblr_api",
+            "type": "BOOLEAN",
+            "help": "Enable Tumblr API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-tumblr"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Web Scraping API",
+            "identifier": "enable_web_scraping_api",
+            "type": "BOOLEAN",
+            "help": "Enable Web Scraping API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "Web fab fa-scraping"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Clockwork SMS API",
+            "identifier": "enable_clockwork_sms_api",
+            "type": "BOOLEAN",
+            "help": "Enable Clockwork SMS API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "Clockwork fab fa-sms"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Aviary API",
+            "identifier": "enable_aviary_api",
+            "type": "BOOLEAN",
+            "help": "Enable Aviary API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-aviary"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Lob API",
+            "identifier": "enable_lob_api",
+            "type": "BOOLEAN",
+            "help": "Enable Lob API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-lob"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Pinterest API",
+            "identifier": "enable_pinterest_api",
+            "type": "BOOLEAN",
+            "help": "Enable Pinterest API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-pinterest"
+            },
+            "more_info_url": "https://codotype.io"
+          },
+          {
+            "label": "Google Maps API",
+            "identifier": "enable_google_maps_api",
+            "type": "BOOLEAN",
+            "help": "Enable Google Maps API?",
+            "default_value": false,
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "Google fab fa-maps"
+            },
+            "more_info_url": "https://codotype.io"
+          }
+        ]
+      },
+      {
+        "label": "Documentation",
+        "identifier": "documentation",
+        "description": "Configure the User Authorization methods for your app",
+        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "attributes": [
+          {
+            "label": "Generate APIDoc Documentation Headers",
+            "identifier": "generate_api_doc",
+            "type": "BOOLEAN",
+            "help": "Whether or not generate APIDoc-compatible comment headers in the API controllers",
+            "default_value": true,
+            "more_info_url": "http://apidocjs.com"
+          }
+        ]
+      }
+    ],
+    "engine_path": "/home/aeksco/code/codotype/codotype/packages/@codotype/codotype-hackathon-starter",
+    "readme": "# codotype-hackathon-starter\n\nA Codotype generator build around Sahat's Hackathon Starter\n\n## Development Instructions\n\n1. Install dependencies:\n\n```\nnpm install\n```\n\n2. Run generator:\n\n```\nnpm test\n```"
+  },
+  {
+    "id": "codotype-postman-collection",
+    "label": "Postman Collection",
+    "icon": "https://raw.githubusercontent.com/codotype/codotype-postman-collection-generator/master/postman.png",
+    "description": "Generates a Postman Collection to interface with REST APIs",
+    "tech_tags": [
+      "Postman Collection"
+    ],
+    "type_tags": [
+      "API",
+      "Utility"
+    ],
+    "self_configuring": false,
+    "project_path": "postman-collection",
+    "option_groups": [],
+    "github_url": "codotype/codotype-postman-collection-generator",
+    "version": "0.1.0",
+    "official": true,
+    "engine_path": "/home/aeksco/code/codotype/codotype/packages/@codotype/codotype-postman-collection-generator",
+    "readme": "# Postman Collection Generator\n:postbox: Generates a Postman Collection to interface with REST APIs\n\nUse [Postman](https://www.getpostman.com/) to run requests, test & debug, create automated tests, and mock, document &\n monitor an API.\n\n## Setup\n\n1. Install [Postman](https://www.getpostman.com/) locally on your computer.\n\n2. Import the Postman Collection JSON file. See the [Postman Collection](https://www.getpostman.com/collection) documentation to learn more"
+  },
+  {
+    "id": "codotype-mevn-generator",
+    "label": "MEVN Fullstack Generator",
+    "icon": "https://res.cloudinary.com/codotype/image/upload/v1551192656/tech-logos/vue.png",
+    "description": "Instantly generate full-stack web apps with MongoDB, Express, and Vue.js, and Node.js",
+    "tech_tags": [
+      "Vue",
+      "Vuex",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Axios",
+      "Bootstrap",
+      "JavaScript",
+      "ES6"
+    ],
+    "type_tags": [
+      "Full-Stack"
+    ],
+    "self_configuring": false,
+    "project_path": "mevn_app",
+    "github_url": "codotype/codotype-vuejs-vuex-bootstrap-generator",
+    "version": "0.1.0",
+    "official": true,
+    "experience": "Advanced",
+    "option_groups": [
+      {
+        "id": "DEPLOYMENT_OPTION_GROUP",
+        "label": "Deployment",
+        "identifier": "deployment",
+        "description": "Configure the deployment options for your app",
+        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "Generate Docker Compose files",
+            "identifier": "generate_docker_compose",
+            "type": "BOOLEAN",
+            "icon": {
+              "type": "ICON_TYPE_URL",
+              "value": "http://res.cloudinary.com/codotype/image/upload/f_png/v1552166225/tech-logos/docker.svg"
+            },
+            "help": "Generate a <code>Dockerfile</code> in both the <code>frontend</code> and <code>backend</code> directories - deploy the whole stack with a single <code>docker-compose up</code> command.",
+            "default_value": true,
+            "more_info_url": "https://docs.docker.com/compose/"
+          },
+          {
+            "label": "Deploy with Netlify",
+            "identifier": "netlify",
+            "type": "BOOLEAN",
+            "help": "Generate a <code>netlify.toml</code> file in the <code>frontend</code> directory for easy deployment to Netlify.",
+            "icon": {
+              "type": "ICON_TYPE_URL",
+              "value": "https://res.cloudinary.com/codotype/image/upload/f_png/v1552186408/tech-logos/netlify.svg"
+            },
+            "default_value": false,
+            "more_info_url": "https://netlify.com/"
+          },
+          {
+            "label": "Deploy With Heroku",
+            "identifier": "heroku",
+            "type": "BOOLEAN",
+            "help": "Generate some additional configuration for easy deployment on Heroku.",
+            "icon": {
+              "type": "ICON_TYPE_URL",
+              "value": "https://cdn.iconscout.com/icon/free/png-256/heroku-225989.png"
+            },
+            "default_value": true,
+            "more_info_url": "http://heroku.com"
+          }
+        ]
+      },
+      {
+        "id": "DOCUMENTATION_OPTION_GROUP",
+        "label": "Documentation",
+        "identifier": "documentation",
+        "description": "Configure the documentation options for your code",
+        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "Generate APIDoc Documentation Headers",
+            "identifier": "generate_api_doc",
+            "type": "BOOLEAN",
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "far fa-comment"
+            },
+            "help": "Whether or not generate APIDoc-compatible comment headers in your Express.js controllers",
+            "default_value": false,
+            "more_info_url": "http://apidocjs.com"
+          }
+        ]
+      },
+      {
+        "id": "UI_CONFIG_OPTION_GROUP",
+        "label": "UI Option",
+        "label_plural": "UI Options",
+        "identifier": "ui_option",
+        "identifier_plural": "ui_options",
+        "class_name": "UIOption",
+        "class_name_plural": "UIOptions",
+        "description": "Tweak the user interface for each Model",
+        "type": "OPTION_GROUP_TYPE_MODEL_OPTION",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "FontAwesome Icon",
+            "identifier": "fontawesome_icon",
+            "type": "STRING",
+            "help": "Specify a FontAwesome 4.7 icon to be used in the UI for this model.",
+            "default_value": "fa fa-user",
+            "more_info_url": "https://fontawesome.com/v4.7.0/icons/",
+            "previewTemplate": "<span><i :class='\"ml-2 mr-1 \" + model.value'></i>{{ schema.label_plural }}</span>"
+          },
+          {
+            "label": "List Style",
+            "identifier": "list_style",
+            "type": "STRING_SELECT",
+            "default_value": "table",
+            "options": [
+              {
+                "id": 1,
+                "value": "table",
+                "label": "Table"
+              },
+              {
+                "id": 2,
+                "value": "cards",
+                "label": "Cards"
+              }
+            ],
+            "help": "Specify a style for the list page for this model"
+          }
+        ]
+      },
+      {
+        "id": "API_ACTION_OPTION_GROUP",
+        "label": "API Action",
+        "label_plural": "API Actions",
+        "identifier": "api_action",
+        "identifier_plural": "api_actions",
+        "class_name": "ApiAction",
+        "class_name_plural": "ApiActions",
+        "description": "Add individual RESTful API actions to your models",
+        "type": "OPTION_GROUP_TYPE_MODEL_ADDON",
+        "previewTemplate": "<small><pre class='bg-dark text-light mb-0' v-if='model.scope === \"COLLECTION\"'>{{model.verb}} /{{ schema.identifier_plural }}/{{model.uri}} - {{ model.function_name }}()</pre><pre class='bg-dark text-light mb-0' v-else>{{model.verb}} /{{ schema.identifier_plural }}/:{{ schema.identifier }}_id/{{model.uri}} - {{ model.function_name }}()</pre></small>",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "Verb",
+            "identifier": "verb",
+            "help": "The RESTful verb associated with this API Action",
+            "default_value": "POST",
+            "type": "STRING_SELECT",
+            "options": [
+              {
+                "id": 1,
+                "value": "GET",
+                "label": "GET"
+              },
+              {
+                "id": 2,
+                "value": "POST",
+                "label": "POST"
+              },
+              {
+                "id": 3,
+                "value": "PUT",
+                "label": "PUT"
+              },
+              {
+                "id": 4,
+                "value": "DELETE",
+                "label": "DELETE"
+              }
+            ],
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "URI",
+            "identifier": "uri",
+            "type": "STRING",
+            "help": "The URL of this action (don't prefix with /)",
+            "default_value": "verify",
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "Label",
+            "identifier": "label",
+            "type": "STRING",
+            "help": "The label of this API Action",
+            "default_value": "Verify",
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "Function Name",
+            "identifier": "function_name",
+            "type": "STRING",
+            "help": "The name of the function",
+            "default_value": "verify",
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "Scope",
+            "identifier": "scope",
+            "help": "The scope of the API Action",
+            "default_value": "MODEL",
+            "type": "STRING_SELECT",
+            "options": [
+              {
+                "id": 1,
+                "value": "MODEL",
+                "label": "Model"
+              },
+              {
+                "id": 2,
+                "value": "COLLECTION",
+                "label": "Collection"
+              }
+            ],
+            "required": true,
+            "unique": false
+          }
+        ]
+      }
+    ],
+    "engine_path": "/home/aeksco/code/codotype/codotype/packages/@codotype/codotype-mevn-generator",
+    "readme": "# codotype-mevn-generator\nFrontend built with Vue.js, Vue Router, Vuex, & Bootstrap 4\nBackend built with Node.js, Express, MongoDB, & Docker\n\n# Thanks\n- [chrisvfritz/vue-monolith-example](https://github.com/chrisvfritz/vue-monolith-example)"
+  },
+  {
+    "id": "codotype-generator-python-falcon-mongodb",
+    "label": "Falcon REST API",
+    "icon": "https://raw.githubusercontent.com/codotype/codotype-python-falcon-mongodb-generator/master/python.png",
+    "description": "Generates REST APIs in Python, Falcon, and MongoDB",
+    "tech_tags": [
+      "Python",
+      "Falcon",
+      "MongoDB",
+      "Docker"
+    ],
+    "type_tags": [
+      "API"
+    ],
+    "experience": "Beginner",
+    "self_configuring": false,
+    "project_path": "falcon_api",
+    "github_url": "codotype/codotype-python-falcon-mongodb-generator",
+    "version": "0.1.0",
+    "official": true,
+    "option_groups": [
+      {
+        "id": "DEPLOYMENT_OPTION_GROUP",
+        "label": "Deployment",
+        "identifier": "deployment",
+        "description": "Configure the deployment options for your app",
+        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "Generate Docker Compose files",
+            "identifier": "generate_docker_compose",
+            "type": "BOOLEAN",
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "fab fa-docker"
+            },
+            "help": "Generate a <code>Dockerfile</code> in both the <code>client</code> and <code>server</code> directories - deploy the whole stack with a single <code>docker-compose up</code> command.",
+            "default_value": true,
+            "more_info_url": "https://docs.docker.com/compose/"
+          }
+        ]
+      }
+    ],
+    "engine_path": "/home/aeksco/code/codotype/codotype/packages/@codotype/codotype-python-falcon-mongodb-generator",
+    "readme": "# codotype-python-falcon-mongodb-generator\n:snake: Codotype Generator for REST APIs in Python, Falcon, &amp; MongoDB\n\nThis [Codotype](https://codotype.io) Generator builds Python REST APIs with Falcon, MongoDB, and Gunicorn\n\n## Setup\n\n1. Install dependencies:\n\n```\npip install -r requirements.txt\n```\n\n2. Start MongoDB Docker container:\n\n```\ndocker-compose up -d\n```\n\n*Note:* this also starts a Mongo-Express Admin instance running at `localhost:8081`\n\n\n## Run Development Server\n\n```\n./run_server.sh\n```\n\nListening at [localhost:8000](http://localhost:8000). `Gunicorn` is used as WSGI HTTP Server.\n\n## Further Reading\n- [MongoEngine](http://docs.mongoengine.org/)\n- [Falcon](https://falcon.readthedocs.io/en/stable/)\n- [Gunicorn](http://docs.gunicorn.org/en/stable/)\n- [Codotype](http://codotype.io/)"
+  },
+  {
+    "id": "codotype-mern-generator",
+    "label": "MERN Fullstack",
+    "icon": "https://res.cloudinary.com/codotype/image/upload/v1553197668/tech-logos/react.png",
+    "description": "Instantly generate full-stack web apps with MongoDB, Express, and React.js, and Node.js",
+    "tech_tags": [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Axios",
+      "Bootstrap",
+      "JavaScript",
+      "ES6"
+    ],
+    "type_tags": [
+      "Full-Stack"
+    ],
+    "self_configuring": false,
+    "project_path": "mevn_app",
+    "github_url": "codotype/codotype-mern-generator",
+    "version": "0.1.0",
+    "official": true,
+    "experience": "Advanced",
+    "option_groups": [
+      {
+        "id": "DEPLOYMENT_OPTION_GROUP",
+        "label": "Deployment",
+        "identifier": "deployment",
+        "description": "Configure the deployment options for your app",
+        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "Generate Docker Compose files",
+            "identifier": "generate_docker_compose",
+            "type": "BOOLEAN",
+            "icon": {
+              "type": "ICON_TYPE_URL",
+              "value": "http://res.cloudinary.com/codotype/image/upload/f_png/v1552166225/tech-logos/docker.svg"
+            },
+            "help": "Generate a <code>Dockerfile</code> in both the <code>frontend</code> and <code>backend</code> directories - deploy the whole stack with a single <code>docker-compose up</code> command.",
+            "default_value": true,
+            "more_info_url": "https://docs.docker.com/compose/"
+          },
+          {
+            "label": "Deploy with Netlify",
+            "identifier": "netlify",
+            "type": "BOOLEAN",
+            "help": "Generate a <code>netlify.toml</code> file in the <code>frontend</code> directory for easy deployment to Netlify.",
+            "icon": {
+              "type": "ICON_TYPE_URL",
+              "value": "https://res.cloudinary.com/codotype/image/upload/f_png/v1552186408/tech-logos/netlify.svg"
+            },
+            "default_value": false,
+            "more_info_url": "https://netlify.com/"
+          },
+          {
+            "label": "Deploy With Heroku",
+            "identifier": "heroku",
+            "type": "BOOLEAN",
+            "help": "Generate some additional configuration for easy deployment on Heroku.",
+            "icon": {
+              "type": "ICON_TYPE_URL",
+              "value": "https://cdn.iconscout.com/icon/free/png-256/heroku-225989.png"
+            },
+            "default_value": true,
+            "more_info_url": "http://heroku.com"
+          }
+        ]
+      },
+      {
+        "id": "DOCUMENTATION_OPTION_GROUP",
+        "label": "Documentation",
+        "identifier": "documentation",
+        "description": "Configure the documentation options for your code",
+        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "Generate APIDoc Documentation Headers",
+            "identifier": "generate_api_doc",
+            "type": "BOOLEAN",
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "far fa-comment"
+            },
+            "help": "Whether or not generate APIDoc-compatible comment headers in your Express.js controllers",
+            "default_value": false,
+            "more_info_url": "http://apidocjs.com"
+          }
+        ]
+      },
+      {
+        "id": "UI_CONFIG_OPTION_GROUP",
+        "label": "UI Option",
+        "label_plural": "UI Options",
+        "identifier": "ui_option",
+        "identifier_plural": "ui_options",
+        "class_name": "UIOption",
+        "class_name_plural": "UIOptions",
+        "description": "Tweak the user interface for each Model",
+        "type": "OPTION_GROUP_TYPE_MODEL_OPTION",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "FontAwesome Icon",
+            "identifier": "fontawesome_icon",
+            "type": "STRING",
+            "help": "Specify a FontAwesome 4.7 icon to be used in the UI for this model.",
+            "default_value": "fa fa-user",
+            "more_info_url": "https://fontawesome.com/v4.7.0/icons/",
+            "previewTemplate": "<span><i :class='\"ml-2 mr-1 \" + model.value'></i>{{ schema.label_plural }}</span>"
+          },
+          {
+            "label": "List Style",
+            "identifier": "list_style",
+            "type": "STRING_SELECT",
+            "default_value": "table",
+            "options": [
+              {
+                "id": 1,
+                "value": "table",
+                "label": "Table"
+              },
+              {
+                "id": 2,
+                "value": "cards",
+                "label": "Cards"
+              }
+            ],
+            "help": "Specify a style for the list page for this model"
+          }
+        ]
+      },
+      {
+        "id": "API_ACTION_OPTION_GROUP",
+        "label": "API Action",
+        "label_plural": "API Actions",
+        "identifier": "api_action",
+        "identifier_plural": "api_actions",
+        "class_name": "ApiAction",
+        "class_name_plural": "ApiActions",
+        "description": "Add individual RESTful API actions to your models",
+        "type": "OPTION_GROUP_TYPE_MODEL_ADDON",
+        "previewTemplate": "<small><pre class='bg-dark text-light mb-0' v-if='model.scope === \"COLLECTION\"'>{{model.verb}} /{{ schema.identifier_plural }}/{{model.uri}} - {{ model.function_name }}()</pre><pre class='bg-dark text-light mb-0' v-else>{{model.verb}} /{{ schema.identifier_plural }}/:{{ schema.identifier }}_id/{{model.uri}} - {{ model.function_name }}()</pre></small>",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "Verb",
+            "identifier": "verb",
+            "help": "The RESTful verb associated with this API Action",
+            "default_value": "POST",
+            "type": "STRING_SELECT",
+            "options": [
+              {
+                "id": 1,
+                "value": "GET",
+                "label": "GET"
+              },
+              {
+                "id": 2,
+                "value": "POST",
+                "label": "POST"
+              },
+              {
+                "id": 3,
+                "value": "PUT",
+                "label": "PUT"
+              },
+              {
+                "id": 4,
+                "value": "DELETE",
+                "label": "DELETE"
+              }
+            ],
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "URI",
+            "identifier": "uri",
+            "type": "STRING",
+            "help": "The URL of this action (don't prefix with /)",
+            "default_value": "verify",
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "Label",
+            "identifier": "label",
+            "type": "STRING",
+            "help": "The label of this API Action",
+            "default_value": "Verify",
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "Function Name",
+            "identifier": "function_name",
+            "type": "STRING",
+            "help": "The name of the function",
+            "default_value": "verify",
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "Scope",
+            "identifier": "scope",
+            "help": "The scope of the API Action",
+            "default_value": "MODEL",
+            "type": "STRING_SELECT",
+            "options": [
+              {
+                "id": 1,
+                "value": "MODEL",
+                "label": "Model"
+              },
+              {
+                "id": 2,
+                "value": "COLLECTION",
+                "label": "Collection"
+              }
+            ],
+            "required": true,
+            "unique": false
+          }
+        ]
+      }
+    ],
+    "engine_path": "/home/aeksco/code/codotype/codotype/packages/@codotype/codotype-mern-generator",
+    "readme": "# codotype-mern-generator\nFrontend built with React.js, React Router, & Bootstrap 4\nBackend built with Node.js, Express, MongoDB, & Docker\n\n# Thanks\n- [chrisvfritz/vue-monolith-example](https://github.com/chrisvfritz/vue-monolith-example)"
+  },
+  {
+    "id": "codotype-vuejs-generator",
+    "label": "Vue.js Frontend Generator",
+    "icon": "https://res.cloudinary.com/codotype/image/upload/v1551192656/tech-logos/vue.png",
+    "description": "Instantly generate web apps Vue.js",
+    "tech_tags": [
+      "Vue",
+      "Vuex",
+      "Node.js",
+      "Axios",
+      "Bootstrap",
+      "JavaScript",
+      "ES6"
+    ],
+    "type_tags": [
+      "Frontend"
+    ],
+    "self_configuring": false,
+    "project_path": "vuejs_app",
+    "github_url": "codotype/codotype-vuejs-generator",
+    "version": "0.1.0",
+    "official": true,
+    "experience": "Beginner",
+    "option_groups": [
+      {
+        "id": "UI_CONFIG_OPTION_GROUP",
+        "label": "UI Option",
+        "label_plural": "UI Options",
+        "identifier": "ui_option",
+        "identifier_plural": "ui_options",
+        "class_name": "UIOption",
+        "class_name_plural": "UIOptions",
+        "description": "Tweak the user interface for each Model",
+        "type": "OPTION_GROUP_TYPE_MODEL_OPTION",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "FontAwesome Icon",
+            "identifier": "fontawesome_icon",
+            "type": "STRING",
+            "help": "Specify a FontAwesome 4.7 icon to be used in the UI for this model.",
+            "default_value": "fa fa-user",
+            "more_info_url": "https://fontawesome.com/v4.7.0/icons/",
+            "previewTemplate": "<span><i :class='\"ml-2 mr-1 \" + model.value'></i>{{ schema.label_plural }}</span>"
+          },
+          {
+            "label": "List Style",
+            "identifier": "list_style",
+            "type": "STRING_SELECT",
+            "default_value": "table",
+            "options": [
+              {
+                "id": 1,
+                "value": "table",
+                "label": "Table"
+              },
+              {
+                "id": 2,
+                "value": "cards",
+                "label": "Cards"
+              }
+            ],
+            "help": "Specify a style for the list page for this model"
+          }
+        ]
+      },
+      {
+        "id": "API_ACTION_OPTION_GROUP",
+        "label": "API Action",
+        "label_plural": "API Actions",
+        "identifier": "api_action",
+        "identifier_plural": "api_actions",
+        "class_name": "ApiAction",
+        "class_name_plural": "ApiActions",
+        "description": "Add individual RESTful API actions to your models",
+        "type": "OPTION_GROUP_TYPE_MODEL_ADDON",
+        "previewTemplate": "<small><pre class='bg-dark text-light mb-0' v-if='model.scope === \"COLLECTION\"'>{{model.verb}} /{{ schema.identifier_plural }}/{{model.uri}} - {{ model.function_name }}()</pre><pre class='bg-dark text-light mb-0' v-else>{{model.verb}} /{{ schema.identifier_plural }}/:{{ schema.identifier }}_id/{{model.uri}} - {{ model.function_name }}()</pre></small>",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "Verb",
+            "identifier": "verb",
+            "help": "The RESTful verb associated with this API Action",
+            "default_value": "POST",
+            "type": "STRING_SELECT",
+            "options": [
+              {
+                "id": 1,
+                "value": "GET",
+                "label": "GET"
+              },
+              {
+                "id": 2,
+                "value": "POST",
+                "label": "POST"
+              },
+              {
+                "id": 3,
+                "value": "PUT",
+                "label": "PUT"
+              },
+              {
+                "id": 4,
+                "value": "DELETE",
+                "label": "DELETE"
+              }
+            ],
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "URI",
+            "identifier": "uri",
+            "type": "STRING",
+            "help": "The URL of this action (don't prefix with /)",
+            "default_value": "verify",
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "Label",
+            "identifier": "label",
+            "type": "STRING",
+            "help": "The label of this API Action",
+            "default_value": "Verify",
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "Function Name",
+            "identifier": "function_name",
+            "type": "STRING",
+            "help": "The name of the function",
+            "default_value": "verify",
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "Scope",
+            "identifier": "scope",
+            "help": "The scope of the API Action",
+            "default_value": "MODEL",
+            "type": "STRING_SELECT",
+            "options": [
+              {
+                "id": 1,
+                "value": "MODEL",
+                "label": "Model"
+              },
+              {
+                "id": 2,
+                "value": "COLLECTION",
+                "label": "Collection"
+              }
+            ],
+            "required": true,
+            "unique": false
+          }
+        ]
+      }
+    ],
+    "engine_path": "/home/aeksco/code/codotype/codotype/packages/@codotype/codotype-vuejs-vuex-bootstrap-generator",
+    "readme": "# Vue.js + Vuex + Bootstrap Generator\nCodotype generator for Vue.js, Vue Router, Vuex, & Bootstrap 4\n\n## Build Setup\n\n### Install dependencies\n```\nnpm install\n```\n\n### Serve with hot reload at localhost:8080\n```\nnpm run dev\n```\n\n### Build for production with minification\n```\nnpm run build\n```\n\n### Build for production and view the bundle analyzer report\n```\nnpm run build --report\n```\n\n### Run unit tests\n```\nnpm run unit\n```\n\n### Run e2e tests\n```\nnpm run e2e\n```\n\n### Run all tests\n```\nnpm test\n```\n\nFor a detailed explanation on how things work, check out the guide and docs for vue-loader.\n\n# TODOs\n- Review isAuthenticated / isAdmin default scope\n\n- Fix toast / notifications container\n\n- Refactor form module\n\n- Re-integrate relational views on show pages\n\n- Fix searching on list page\n\n- Review Vuex store choices\n\n- Split Vuex mixins into separate module files\n\n- Fix \"CREATE SUCCESS\" toast message text\n\n- Re-implement routing after successful create\n\n- Move token out of local storage, manage in Cookies\n\n- Profile fetch occurs twice on page load?\nhttps://github.com/vuejs/vue-router/issues/1377\n\n- Split AUTH Vuex store into smaller modules for login, register, reset password, etc.\n\nAdd predev back to package.json (or restrucutre for better development experience?)\n\"predev\": \"yarn install\","
+  },
+  {
+    "id": "codotype-nodejs-express-mongodb-generator",
+    "label": "Express.js & MongoDB REST API Generator",
+    "icon": "https://jaystack.com/wp-content/uploads/2015/12/nodejs-logo-e1497443346889.png",
+    "description": "Instantly generate Web APIs with Node.js, Express, MongoDB, and Docker",
+    "tech_tags": [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Docker",
+      "JavaScript",
+      "ES6"
+    ],
+    "type_tags": [
+      "REST API"
+    ],
+    "self_configuring": false,
+    "project_path": "express_api",
+    "github_url": "codotype/codotype-nodejs-express-mongodb-generator",
+    "version": "0.1.0",
+    "official": true,
+    "experience": "Intermediate",
+    "option_groups": [
+      {
+        "id": "DEPLOYMENT_OPTION_GROUP",
+        "label": "Deployment",
+        "identifier": "deployment",
+        "description": "Configure the deployment options for your app",
+        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "Generate Docker Compose files",
+            "identifier": "generate_docker_compose",
+            "type": "BOOLEAN",
+            "icon": {
+              "type": "ICON_TYPE_URL",
+              "value": "http://res.cloudinary.com/codotype/image/upload/f_png/v1552166225/tech-logos/docker.svg"
+            },
+            "help": "Generate a <code>Dockerfile</code> in both the <code>frontend</code> and <code>backend</code> directories - deploy the whole stack with a single <code>docker-compose up</code> command.",
+            "default_value": true,
+            "more_info_url": "https://docs.docker.com/compose/"
+          }
+        ]
+      },
+      {
+        "id": "DOCUMENTATION_OPTION_GROUP",
+        "label": "Documentation",
+        "identifier": "documentation",
+        "description": "Configure the documentation options for your code",
+        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "Generate APIDoc Documentation Headers",
+            "identifier": "generate_api_doc",
+            "type": "BOOLEAN",
+            "icon": {
+              "type": "ICON_TYPE_FONT_AWESOME",
+              "value": "far fa-comment"
+            },
+            "help": "Whether or not generate APIDoc-compatible comment headers in your Express.js controllers",
+            "default_value": false,
+            "more_info_url": "http://apidocjs.com"
+          }
+        ]
+      },
+      {
+        "id": "API_ACTION_OPTION_GROUP",
+        "label": "API Action",
+        "label_plural": "API Actions",
+        "identifier": "api_action",
+        "identifier_plural": "api_actions",
+        "class_name": "ApiAction",
+        "class_name_plural": "ApiActions",
+        "description": "Add individual RESTful API actions to your models",
+        "type": "OPTION_GROUP_TYPE_MODEL_ADDON",
+        "previewTemplate": "<small><pre class='bg-dark text-light mb-0' v-if='model.scope === \"COLLECTION\"'>{{model.verb}} /{{ schema.identifier_plural }}/{{model.uri}} - {{ model.function_name }}()</pre><pre class='bg-dark text-light mb-0' v-else>{{model.verb}} /{{ schema.identifier_plural }}/:{{ schema.identifier }}_id/{{model.uri}} - {{ model.function_name }}()</pre></small>",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "Verb",
+            "identifier": "verb",
+            "help": "The RESTful verb associated with this API Action",
+            "default_value": "POST",
+            "type": "STRING_SELECT",
+            "options": [
+              {
+                "id": 1,
+                "value": "GET",
+                "label": "GET"
+              },
+              {
+                "id": 2,
+                "value": "POST",
+                "label": "POST"
+              },
+              {
+                "id": 3,
+                "value": "PUT",
+                "label": "PUT"
+              },
+              {
+                "id": 4,
+                "value": "DELETE",
+                "label": "DELETE"
+              }
+            ],
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "URI",
+            "identifier": "uri",
+            "type": "STRING",
+            "help": "The URL of this action (don't prefix with /)",
+            "default_value": "verify",
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "Label",
+            "identifier": "label",
+            "type": "STRING",
+            "help": "The label of this API Action",
+            "default_value": "Verify",
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "Function Name",
+            "identifier": "function_name",
+            "type": "STRING",
+            "help": "The name of the function",
+            "default_value": "verify",
+            "required": true,
+            "unique": false
+          },
+          {
+            "label": "Scope",
+            "identifier": "scope",
+            "help": "The scope of the API Action",
+            "default_value": "MODEL",
+            "type": "STRING_SELECT",
+            "options": [
+              {
+                "id": 1,
+                "value": "MODEL",
+                "label": "Model"
+              },
+              {
+                "id": 2,
+                "value": "COLLECTION",
+                "label": "Collection"
+              }
+            ],
+            "required": true,
+            "unique": false
+          }
+        ]
+      }
+    ],
+    "engine_path": "/home/aeksco/code/codotype/codotype/packages/@codotype/codotype-nodejs-express-mongodb-generator",
+    "readme": "# Express.js + MongoDB API Generator\n:ship: Codotype REST API generator for Node.js, Express, MongoDB, JSON Web Token, &amp; Docker\n\n## Getting Started\nExpress.js, Mongoose, ES6 Syntax is used in this project.\n\n### Prerequisites\n- [Docker](https://www.docker.com/)\n- [Node.js](https://nodejs.org/)\n- [npm](https://www.npmjs.com/)\n\n### Install and Develop\n1. Install dependencies with NPM:\n\n```\nnpm install\n```\n\n2. Run the Docker containers for MongoDB and [Mongo-Express](https://github.com/mongo-express/mongo-express)\n\n```\ndocker-compose up\n```\n\n3. Run the server in development mode:\n\n```\nnpm run dev\n```\n\n### Documentation\nDocumentation is auto-generated from [APIDoc.JS](http://apidocjs.com). Build the documentation with the following command:\n\n```\nnpm run apidoc\n```\n\n### Technologies used\n\n- [Express.js](https://expressjs.com/)\n\n- [Mongoose](http://mongoosejs.com/)\n\n- [dotenv](https://www.npmjs.com/package/dotenv)\n\n- [APIDoc.JS](http://apidocjs.com)\n\n## License\n[MIT License](http://opensource.org/licenses/MIT).\nBuilt with [codotype](https://www.codotype.io/).\n"
+  },
+  {
+    "id": "codotype-react-generator",
+    "label": "React Fullstack Generator",
+    "icon": "https://res.cloudinary.com/codotype/image/upload/v1553197668/tech-logos/react.png",
+    "description": "Instantly generate web apps React.js and Bootstrap",
+    "tech_tags": [
+      "React",
+      "Axios",
+      "Bootstrap",
+      "JavaScript",
+      "ES6"
+    ],
+    "type_tags": [
+      "Frontend"
+    ],
+    "self_configuring": false,
+    "project_path": "react_app",
+    "github_url": "codotype/codotype-react-generator",
+    "version": "0.1.0",
+    "official": true,
+    "experience": "Beginner",
+    "option_groups": [
+      {
+        "id": "UI_CONFIG_OPTION_GROUP",
+        "label": "UI Option",
+        "label_plural": "UI Options",
+        "identifier": "ui_option",
+        "identifier_plural": "ui_options",
+        "class_name": "UIOption",
+        "class_name_plural": "UIOptions",
+        "description": "Tweak the user interface for each Model",
+        "type": "OPTION_GROUP_TYPE_MODEL_OPTION",
+        "more_info_url": null,
+        "attributes": [
+          {
+            "label": "FontAwesome Icon",
+            "identifier": "fontawesome_icon",
+            "type": "STRING",
+            "help": "Specify a FontAwesome 4.7 icon to be used in the UI for this model.",
+            "default_value": "fa fa-user",
+            "more_info_url": "https://fontawesome.com/v4.7.0/icons/",
+            "previewTemplate": "<span><i :class='\"ml-2 mr-1 \" + model.value'></i>{{ schema.label_plural }}</span>"
+          }
+        ]
+      }
+    ],
+    "engine_path": "/home/aeksco/code/codotype/codotype/packages/@codotype/codotype-react-generator",
+    "readme": "# codotype-react-generator\n\nCodotype generator for React, React Router, & Bootstrap 4\n"
+  },
+  {
+    "id": "codotype-mongodb-dataworker",
+    "label": "MongoDB Data Worker",
+    "icon": "https://res.cloudinary.com/codotype/image/upload/v1553197622/tech-logos/mongodb.png",
+    "description": "Generates a series of scripts and CSV templates to easily import data into MongoDB",
+    "tech_tags": [
+      "MongoDB",
+      "Mongoose",
+      "CSV"
+    ],
+    "type_tags": [
+      "Utility"
+    ],
+    "self_configuring": false,
+    "project_path": "mongodb-data-importer",
+    "global_options": [
+      {
+        "label": "Import Script Type",
+        "identifier": "import_script_type",
+        "type": "TEXT_SELECT",
+        "default_value": "csv",
+        "options": [
+          {
+            "id": 1,
+            "value": "csv",
+            "label": "CSV Import Scripts"
+          },
+          {
+            "id": 2,
+            "value": "json",
+            "label": "JSON Import Scripts"
+          },
+          {
+            "id": 3,
+            "value": "both",
+            "label": "Both CSV and JSON Import Scripts"
+          }
+        ],
+        "help": "Specify the type of script you would like to import data into MongoDB",
+        "more_info_url": "http://mongodb.com"
+      }
+    ],
+    "option_groups": [],
+    "github_url": "codotype/codotype-mongodb-dataworker-generator",
+    "version": "0.1.0",
+    "official": true,
+    "engine_path": "/home/aeksco/code/codotype/codotype/packages/@codotype/codotype-mongodb-dataworker",
+    "readme": "# codotype-mongodb-scripts-generator\n:leaves: Generate scripts to populate MongoDB with CSV and JSON files\n\nQuickly populate MongoDB with CSV or JSON files\n\n## Using the MongoDB DataWorker\n\nInstall dependencies:\n\n```\nnpm install\n```\n\nRun one of the following commands to populate the database from a CSV file:\n\n```\nnpm run seed-users-csv\nnpm run seed-todos-csv\n...\n```\n\nRun one of the following commands to populate the database from a JSON file:\n\n```\nnpm run seed-users-json\nnpm run seed-todos-json\n...\n```\n"
+  }
+]
