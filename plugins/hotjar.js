@@ -9,7 +9,7 @@ export default ({ app }) => {
   // Short-circuit this function if required env variable is undefined
   if (!process.env.HOTJAR_SITE_ID) return
 
-  const { HOTJAR_SITE_ID } = process.env;
+  const HOTJAR_SITE_ID = process.env.HOTJAR_SITE_ID;
 
   // Hotjar Tracking Code for codotype.io
   (function(h,o,t,j,a,r){

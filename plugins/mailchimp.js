@@ -10,7 +10,9 @@ export default ({ app }) => {
   if (!process.env.MAILCHIMP_BASE_URL || !process.env.MAILCHIMP_UUID || !process.env.MAILCHIMP_LID) return
 
   // Pull Mailchimp variables from process.env
-  const { MAILCHIMP_BASE_URL, MAILCHIMP_UUID, MAILCHIMP_LID } = process.env
+  const MAILCHIMP_BASE_URL = process.env.MAILCHIMP_BASE_URL
+  const MAILCHIMP_UUID = process.env.MAILCHIMP_UUID
+  const MAILCHIMP_LID = process.env.MAILCHIMP_LID
 
   /* eslint-disable */
 

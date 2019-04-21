@@ -9,7 +9,7 @@ export default ({ app }) => {
   // Short-circuit this function if required env variable is undefined
   if (!process.env.GA_TRACKING_ID) return
 
-  const { GA_TRACKING_ID } = process.env;
+  const GA_TRACKING_ID = process.env.GA_TRACKING_ID
 
   // Include Google Analytics Script
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
