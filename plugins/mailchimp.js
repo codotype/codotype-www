@@ -6,11 +6,11 @@ export default ({ app }) => {
   // Only run on client-side and only in production mode
   if (process.env.NODE_ENV !== 'production') return
 
+  // Short circuit if the required env variables aren't available
+  if (!process.env.MAILCHIMP_BASE_URL || !process.env.MAILCHIMP_UUID || !process.env.MAILCHIMP_LID) return
+
   // Pull Mailchimp variables from process.env
   const { MAILCHIMP_BASE_URL, MAILCHIMP_UUID, MAILCHIMP_LID } = process.env
-
-  // Short circuit if the required env variables aren't available
-  if (!MAILCHIMP_BASE_URL || !MAILCHIMP_UUID || !MAILCHIMP_LID) return
 
   /* eslint-disable */
 
