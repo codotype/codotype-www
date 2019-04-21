@@ -34,7 +34,9 @@ export default {
    */
   plugins: [
     '~/plugins/fontawesome.js',
-    '~/plugins/jsonld.js'
+    '~/plugins/jsonld.js',
+    { src: '~plugins/ga.js', ssr: false },
+    { src: '~plugins/hotjar.js', ssr: false }
   ],
 
   /*
@@ -51,6 +53,13 @@ export default {
   bootstrapVue: {
     bootstrapCSS: false, // or `css`
     bootstrapVueCSS: false // or `bvCSS`
+  },
+
+  // Environment variable configuration
+  // Doc: https://nuxtjs.org/api/configuration-env
+  env: {
+    HOTJAR_SITE_ID: process.env.HOTJAR_SITE_ID ? Number(process.env.HOTJAR_SITE_ID) : undefined,
+    GA_TRACKING_ID: process.env.GA_TRACKING_ID || undefined
   },
 
   /*
