@@ -59,7 +59,10 @@ export default {
   // Doc: https://nuxtjs.org/api/configuration-env
   env: {
     HOTJAR_SITE_ID: process.env.HOTJAR_SITE_ID ? Number(process.env.HOTJAR_SITE_ID) : undefined,
-    GA_TRACKING_ID: process.env.GA_TRACKING_ID || undefined
+    GA_TRACKING_ID: process.env.GA_TRACKING_ID || undefined,
+    MAILCHIMP_BASE_URL: process.env.MAILCHIMP_BASE_URL || undefined,
+    MAILCHIMP_UUID: process.env.MAILCHIMP_UUID || undefined,
+    MAILCHIMP_LID: process.env.MAILCHIMP_LID || undefined
   },
 
   /*
