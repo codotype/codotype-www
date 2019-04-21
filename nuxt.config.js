@@ -35,7 +35,7 @@ export default {
   plugins: [
     '~/plugins/fontawesome.js',
     '~/plugins/jsonld.js',
-    // { src: '~plugins/ga.js', ssr: false },
+    { src: '~plugins/ga.js', ssr: false },
     { src: '~plugins/hotjar.js', ssr: false },
     { src: '~plugins/mailchimp.js', ssr: false }
   ],
