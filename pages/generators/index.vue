@@ -35,11 +35,13 @@
 
         <b-row>
           <b-col lg="12">
-            <div class="card-columns">
-              <transition-group name="generator-list" tag="div">
-                <GeneratorCard v-for="m in generators" :key="m.id" :model="m" />
-              </transition-group>
-            </div>
+            <transition-group name="generator-list" tag="div">
+              <GeneratorListItem
+                v-for="m in generators"
+                :key="m.id"
+                :model="m"
+              />
+            </transition-group>
           </b-col>
 
           <b-col lg="12">
@@ -62,12 +64,12 @@
 </template>
 
 <script>
-import GeneratorCard from '@codotype/ui/src/modules/generator/components/GeneratorCard.vue'
+import GeneratorListItem from '@codotype/ui/src/modules/generator/components/GeneratorListItem.vue'
 import generatorCollection from '~/assets/content/generators.json'
 
 export default {
   components: {
-    GeneratorCard
+    GeneratorListItem
   },
   head() {
     return {
