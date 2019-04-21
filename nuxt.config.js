@@ -35,7 +35,7 @@ export default {
   plugins: [
     '~/plugins/fontawesome.js',
     '~/plugins/jsonld.js',
-    { src: '~plugins/ga.js', ssr: false },
+    // { src: '~plugins/ga.js', ssr: false },
     { src: '~plugins/hotjar.js', ssr: false },
     { src: '~plugins/mailchimp.js', ssr: false }
   ],
@@ -60,10 +60,10 @@ export default {
   // Doc: https://nuxtjs.org/api/configuration-env
   env: {
     HOTJAR_SITE_ID: process.env.HOTJAR_SITE_ID ? Number(process.env.HOTJAR_SITE_ID) : undefined,
-    GA_TRACKING_ID: process.env.GA_TRACKING_ID || undefined,
-    MAILCHIMP_BASE_URL: process.env.MAILCHIMP_BASE_URL || undefined,
-    MAILCHIMP_UUID: process.env.MAILCHIMP_UUID || undefined,
-    MAILCHIMP_LID: process.env.MAILCHIMP_LID || undefined
+    GA_TRACKING_ID: String(process.env.GA_TRACKING_ID) || undefined,
+    MAILCHIMP_BASE_URL: String(process.env.MAILCHIMP_BASE_URL) || undefined,
+    MAILCHIMP_UUID: String(process.env.MAILCHIMP_UUID) || undefined,
+    MAILCHIMP_LID: String(process.env.MAILCHIMP_LID) || undefined
   },
 
   /*
