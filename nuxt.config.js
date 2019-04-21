@@ -1,4 +1,5 @@
 import pkg from './package'
+import generators from './assets/content/generators.json'
 
 export default {
   mode: 'universal',
@@ -14,6 +15,13 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [{ rel: 'icon', type: 'image/png', href: 'https://res.cloudinary.com/codotype/image/upload/v1552257221/codotype-icons/favicon.png' }]
+  },
+
+  // Generate static pages for all generators
+  // Must be done because generator routes are dynamic
+  // Doc: https://nuxtjs.org/api/configuration-generate
+  generate: {
+    routes: generators.map(g => '/generators/' + g.id)
   },
 
   /*
@@ -60,10 +68,11 @@ export default {
   // Doc: https://nuxtjs.org/api/configuration-env
   env: {
     HOTJAR_SITE_ID: process.env.HOTJAR_SITE_ID ? Number(process.env.HOTJAR_SITE_ID) : undefined,
-    GA_TRACKING_ID: String(process.env.GA_TRACKING_ID) || undefined,
-    MAILCHIMP_BASE_URL: String(process.env.MAILCHIMP_BASE_URL) || undefined,
-    MAILCHIMP_UUID: String(process.env.MAILCHIMP_UUID) || undefined,
-    MAILCHIMP_LID: String(process.env.MAILCHIMP_LID) || undefined
+    GA_TRACKING_ID: String(process.env.GA_TRACKING_ID),
+    MAILCHIMP_BASE_URL: String(process.env.MAILCHIMP_BASE_URL),
+    MAILCHIMP_UUID: String(process.env.MAILCHIMP_UUID),
+    MAILCHIMP_LID: String(process.env.MAILCHIMP_LID),
+    CODOTYPE_APP_HOST: String(process.env.CODOTYPE_APP_HOST) || 'http://localhost:8080'
   },
 
   /*
