@@ -41,6 +41,7 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
+    '~/plugins/contentful.js',
     '~/plugins/fontawesome.js',
     '~/plugins/jsonld.js',
     { src: '~plugins/ga.js', ssr: false },
@@ -72,7 +73,9 @@ export default {
     MAILCHIMP_BASE_URL: String(process.env.MAILCHIMP_BASE_URL),
     MAILCHIMP_UUID: String(process.env.MAILCHIMP_UUID),
     MAILCHIMP_LID: String(process.env.MAILCHIMP_LID),
-    CODOTYPE_APP_HOST: String(process.env.CODOTYPE_APP_HOST) || 'http://localhost:8080'
+    CODOTYPE_APP_HOST: String(process.env.CODOTYPE_APP_HOST) || 'http://localhost:8080',
+    CTF_SPACE_ID: String(process.env.CTF_SPACE_ID),
+    CTF_CDA_ACCESS_TOKEN: String(process.env.CTF_CDA_ACCESS_TOKEN),
   },
 
   /*
