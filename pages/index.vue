@@ -61,16 +61,52 @@
             </b-button>
           </div>
         </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <hr />
+          </div>
+        </div>
+
+        <div class="row mt-2 mb-4">
+          <div
+            v-for="section in infoSections"
+            :key="section.title"
+            class="col-lg-4 text-center"
+          >
+            <h4>{{ section.title }}</h4>
+            <p>{{ section.body }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+/* eslint-disable */
+
 import GeneratorCard from '@codotype/ui/src/modules/generator/components/GeneratorCard.vue'
 import generatorCollection from '~/assets/content/generators.json'
+import { createClient } from '~/plugins/contentful.js'
+
+const client = createClient()
 
 export default {
+  async asyncData({ env }) {
+    try {
+      const infoSections = await client.getEntries({
+        content_type: 'infoSection',
+        order: 'fields.order'
+      })
+
+      return {
+        infoSections: infoSections.items.map(i => i.fields)
+      }
+    } catch (e) {
+      console.error(e)
+    }
+  },
   components: {
     GeneratorCard
   },
