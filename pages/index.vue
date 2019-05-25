@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <div class="row">
+    <div class="row mt-2">
       <div class="col-lg-12">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -10,17 +10,17 @@
 
         <div class="row py-2">
           <div class="col-lg-12 text-center">
-            <p class="lead">visual code scaffolding for the modern web</p>
+            <!-- <p class="lead">visual code scaffolding for the modern web</p> -->
             <p class="lead">
               Hand-crafted code scaffolding for the modern web
             </p>
             <p>
               Prototype new web applications amazingly fast
             </p>
-            <p>
+            <!-- <p>
               Define your models, attributes, and relations - Codotype does the
               rest
-            </p>
+            </p> -->
           </div>
 
           <div
@@ -30,17 +30,34 @@
           </div>
         </div>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <hr class="mt-2" />
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6">
+            <hr />
+          </div>
+          <div class="col-lg-12 text-center text-muted">
+            <p class="lead">
+              <!-- <font-awesome-icon icon="drafting-compass" /> -->
+              Select a generator to get started
+            </p>
+          </div>
+          <div class="col-lg-12">
+            <div class="card-columns">
+              <GeneratorCard :model="g1" />
+              <GeneratorCard :model="g3" />
+              <GeneratorCard :model="g2" />
+            </div>
           </div>
         </div>
 
         <div class="row mt-2 mb-4 justify-content-center">
           <div class="col-lg-4">
-            <b-button to="/generators" size="lg" variant="primary" block>
-              <font-awesome-icon icon="drafting-compass" />
-              Start Your Next Project
+            <b-button
+              to="/generators"
+              size="lg"
+              variant="outline-primary"
+              block
+            >
+              Browse Generators
             </b-button>
           </div>
         </div>
@@ -50,7 +67,20 @@
 </template>
 
 <script>
+import GeneratorCard from '@codotype/ui/src/modules/generator/components/GeneratorCard.vue'
+import generatorCollection from '~/assets/content/generators.json'
+
 export default {
+  components: {
+    GeneratorCard
+  },
+  data() {
+    return {
+      g1: generatorCollection[0],
+      g2: generatorCollection[1],
+      g3: generatorCollection[2]
+    }
+  },
   head() {
     return {
       title: 'Codotype - Home',
