@@ -22,6 +22,22 @@ export default {
           content: this.model.description
         },
         {
+          property: 'og:url',
+          content: 'https://codotype.io/generators/' + this.model.id
+        },
+        {
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          property: 'og:title',
+          content: 'Codotype - ' + this.model.label
+        },
+        {
+          property: 'og:description',
+          content: this.model.description
+        },
+        {
           property: 'og:image',
           content: 'https://avatars2.githubusercontent.com/u/42126198?s=200&v=4'
         }
