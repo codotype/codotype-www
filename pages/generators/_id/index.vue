@@ -20,6 +20,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.model.description
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'https://res.cloudinary.com/codotype/image/upload/v1552257221/codotype-icons/favicon.png'
         }
       ]
     }
