@@ -43,8 +43,8 @@
           <div class="col-lg-12">
             <div class="card-columns">
               <GeneratorCard :model="g1" />
-              <GeneratorCard :model="g3" />
               <GeneratorCard :model="g2" />
+              <GeneratorCard :model="g3" />
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default {
     return {
       g1: generatorCollection[0],
       g2: generatorCollection[1],
-      g3: generatorCollection[2]
+      g3: generatorCollection[2],
     }
   },
   head() {
