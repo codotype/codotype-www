@@ -19,7 +19,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'My custom description'
+          content: this.model.description
         }
       ]
     }

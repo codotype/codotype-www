@@ -3,7 +3,7 @@
     "id": "codotype-hackathon-starter",
     "label": "Sahat's Hackathon Starter",
     "icon": "https://jaystack.com/wp-content/uploads/2015/12/nodejs-logo-e1497443346889.png",
-    "description": "Codotype generator with Sahat's Hackathon Starter",
+    "description": "Generate custom full-stack CRUD and easily enable / disable features in Hackathon Starter.",
     "tech_tags": [
       "Node.js",
       "Express",
