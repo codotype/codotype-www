@@ -22,8 +22,7 @@ export default {
           content: this.model.description
         },
         {
-          hid: 'og:image',
-          name: 'og:image',
+          property: 'og:image',
           content:
             'https://res.cloudinary.com/codotype/image/upload/v1552257221/codotype-icons/favicon.png'
         }
