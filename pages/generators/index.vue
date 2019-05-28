@@ -78,7 +78,29 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'My custom description'
+          content:
+            'Instantly generate full-stack boilerplate code with custom CRUD.'
+        },
+        {
+          property: 'og:url',
+          content: 'https://codotype.io/about'
+        },
+        {
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          property: 'og:title',
+          content: 'Codotype - Building Better Boilerplate'
+        },
+        {
+          property: 'og:description',
+          content:
+            'Instantly generate full-stack boilerplate code with custom CRUD.'
+        },
+        {
+          property: 'og:image',
+          content: 'https://avatars2.githubusercontent.com/u/42126198?s=200&v=4'
         }
       ]
     }
