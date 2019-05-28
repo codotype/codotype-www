@@ -23,8 +23,7 @@ export default {
         },
         {
           property: 'og:image',
-          content:
-            'https://res.cloudinary.com/codotype/image/upload/v1552257221/codotype-icons/favicon.png'
+          content: 'https://avatars2.githubusercontent.com/u/42126198?s=200&v=4'
         }
       ]
     }
