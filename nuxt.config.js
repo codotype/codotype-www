@@ -1,5 +1,6 @@
 import pkg from './package'
 import generators from './assets/content/generators.json'
+require('dotenv').config()
 
 export default {
   mode: 'universal',
