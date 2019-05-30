@@ -121,18 +121,33 @@ export default {
     return {
       title: 'Codotype - Home',
       meta: [
+        { property: 'twitter:card', content: 'summary' },
+        { property: 'twitter:title', value: 'Codotype' },
+        { property: 'twitter:description', value: 'Instantly generate full-stack boilerplate code with custom CRUD.' },
+        { property: 'twitter:image', value: 'https://avatars2.githubusercontent.com/u/42126198?s=200&v=4' },
+        { property: 'twitter:url', value: 'https://codotype.io' },
+        { property: 'twitter:site', value: '@codotype' },
+        { property: 'twitter:creator', value: '@aeksco' },
+        { property: 'twitter:label1', value: 'Get started' },
+        { property: 'twitter:data1', value: 'at Codotype.io' },
+        { property: 'twitter:label2', value: 'Get in touch' },
+        { property: 'twitter:data2', value: '@codotype' },
         {
           hid: 'description',
           name: 'description',
           content: 'Instantly generate full-stack boilerplate code with custom CRUD.'
         },
         {
+          property: 'og:type',
+          content: 'website'
+        },
+        {
           property: 'og:url',
           content: 'https://codotype.io'
         },
         {
-          property: 'og:type',
-          content: 'website'
+          property: 'og:site_name',
+          content: 'Codotype'
         },
         {
           property: 'og:title',
