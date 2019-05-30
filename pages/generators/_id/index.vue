@@ -17,6 +17,18 @@ export default {
       title: 'Codotype - ' + this.model.label,
       meta: [
         {
+          property: 'twitter:card',
+          content: 'summary'
+        },
+        {
+          property: 'twitter:site',
+          value: '@codotype'
+        },
+        {
+          property: 'twitter:creator',
+          value: '@aeksco'
+        },
+        {
           hid: 'description',
           name: 'description',
           content: this.model.description
