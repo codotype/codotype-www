@@ -6,6 +6,7 @@
 
 <script>
 import GeneratorStart from '@codotype/ui/src/modules/generator/components/GeneratorStart.vue'
+import generatorCollection from '~/assets/content/generators.json'
 
 export default {
   components: {
@@ -55,15 +56,9 @@ export default {
       ]
     }
   },
-  async asyncData({ $axios }) {
-    const generators = await $axios.$get(
-      'https://api.codotype.io/api/generators'
-    )
-    return { generatorCollection: generators }
-  },
   computed: {
     model() {
-      return this.generatorCollection.find(g => g.id === this.$route.params.id)
+      return generatorCollection.find(g => g.id === this.$route.params.id)
     },
     externalLink() {
       const id = this.$route.params.id

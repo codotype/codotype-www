@@ -65,16 +65,11 @@
 
 <script>
 import GeneratorListItem from '@codotype/ui/src/modules/generator/components/GeneratorListItem.vue'
+import generatorCollection from '~/assets/content/generators.json'
 
 export default {
   components: {
     GeneratorListItem
-  },
-  async asyncData({ $axios }) {
-    const generators = await $axios.$get(
-      'https://api.codotype.io/api/generators'
-    )
-    return { generatorCollection: generators }
   },
   head() {
     return {
@@ -130,7 +125,7 @@ export default {
   computed: {
     generators() {
       // Filters all generators and returns the result
-      return this.generatorCollection.filter(g => {
+      return generatorCollection.filter(g => {
         // Filters available generators based on this.filter data
         if (!this.filter) return true
 

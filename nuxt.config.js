@@ -82,9 +82,9 @@ export default {
 
   // @nuxtjs/axios plugin configuration
   axios: {
-    prefix: '/',
-    baseUrl: '/', // For the server
-    browserBaseURL: '/'
+    // prefix: '/',
+    // baseUrl: '/', // For the server
+    // browserBaseURL: '/'
   },
 
   /*
