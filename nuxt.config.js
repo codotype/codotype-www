@@ -54,6 +54,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+   '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     // Doc: https://www.npmjs.com/package/vue-github-buttons#using-with-nuxt
@@ -77,6 +78,13 @@ export default {
     CODOTYPE_APP_HOST: String(process.env.CODOTYPE_APP_HOST) || 'http://localhost:8080',
     CTF_SPACE_ID: String(process.env.CTF_SPACE_ID),
     CTF_CDA_ACCESS_TOKEN: String(process.env.CTF_CDA_ACCESS_TOKEN),
+  },
+
+  // @nuxtjs/axios plugin configuration
+  axios: {
+    prefix: '/',
+    baseUrl: '/', // For the server
+    browserBaseURL: '/'
   },
 
   /*
