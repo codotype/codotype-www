@@ -1,5 +1,5 @@
 <template>
-  <div class="section bg-light">
+  <div class="section bg-grey">
     <div class="container">
       <div class="section-title text-center">
         <h3>What our users say</h3>

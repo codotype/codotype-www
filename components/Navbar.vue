@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="md" type="light" variant="light">
+  <b-navbar toggleable="md" type="light" variant="light" class="bg-white">
     <div class="container">
       <div class="d-flex flew-row align-items-center">
         <img

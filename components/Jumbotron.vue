@@ -96,32 +96,6 @@ export default {
 <style lang="scss">
 @import '@/assets/scss/style.scss';
 
-.jumbotron {
-  width: 100%;
-  background-color: transparent;
-  margin-bottom: 0;
-  @include media-breakpoint-up(sm) {
-    padding: 2rem 0;
-    &.sub-page {
-      padding: 0 0 2rem 0;
-    }
-  }
-  &.sub-page {
-    min-height: 290px;
-    background: #f8faff;
-  }
-  .lead {
-    max-width: 600px;
-    margin: auto;
-  }
-  .btn-lg {
-    padding: 17px 35px;
-  }
-  .btn {
-    margin: 10px;
-  }
-}
-
 .jumbotron-two {
   padding: 2rem 0;
   .lead {
