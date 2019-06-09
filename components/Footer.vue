@@ -17,9 +17,6 @@
               <br />
             </p>
           </span>
-          <div class="mt-4">
-            <gh-btns-star slug="codotype/codotype" show-count />
-          </div>
         </div>
         <!-- // end .col-sm-3 -->
         <div class="col-sm-2">
