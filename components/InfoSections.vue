@@ -11,7 +11,7 @@
             <div class="media-body text-center">
               <div class="color-icon mb-3">
                 <font-awesome-icon
-                  icon="heart"
+                  :icon="[each.fontAwesomePrefix, each.fontAwesomeIcon]"
                   class="text-primary"
                   size="2x"
                 />

@@ -33,6 +33,7 @@ export default {
       })
 
       const landingPage = response.items[0].fields
+      // console.log(landingPage.features.map(f => f.fields))
 
       return {
         title: landingPage.title,

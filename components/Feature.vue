@@ -12,7 +12,7 @@
               <div class="media-body">
                 <div class="media-icon mb-3">
                   <font-awesome-icon
-                    icon="heart"
+                    :icon="[each.fontAwesomePrefix, each.fontAwesomeIcon]"
                     class="text-primary"
                     size="2x"
                   />
@@ -46,7 +46,7 @@
               <div class="media-body">
                 <div class="media-icon mb-3">
                   <font-awesome-icon
-                    icon="heart"
+                    :icon="[each.fontAwesomePrefix, each.fontAwesomeIcon]"
                     class="text-primary"
                     size="2x"
                   />
