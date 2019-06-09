@@ -154,27 +154,5 @@ header {
 
 .section {
   position: relative;
-  &.bg-overlay:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-  }
-  &.bg-gradient:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(
-      to right,
-      rgba(106, 17, 203, 0.76) 0%,
-      rgba(37, 117, 252, 0.77) 100%
-    );
-  }
 }
 </style>
