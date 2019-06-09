@@ -2,11 +2,7 @@
   <div class="overflow-hidden">
     <header id="home">
       <Navbar />
-      <template v-if="$nuxt.$route.path === '/'">
-        <div class="bg-shape"></div>
-        <div class="bg-circle"></div>
-        <div class="bg-circle-two"></div>
-      </template>
+      <!-- <template v-if="$nuxt.$route.path === '/'"> -->
     </header>
     <nuxt />
     <AppFooter />

@@ -1,5 +1,10 @@
 <template>
   <div>
+    <template>
+      <div class="bg-shape"></div>
+      <div class="bg-circle"></div>
+      <div class="bg-circle-two"></div>
+    </template>
     <Jumbotron :title="title" :subtitle="subtitle" :body="jumbotronText" />
     <InfoSection :info-sections="infoSections" />
     <Feature :features="features" />
