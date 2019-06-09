@@ -1,93 +1,26 @@
 <template>
-  <section class="container">
-    <div class="row mt-2">
-      <div class="col-lg-12">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h1 class="display-3">Codotype</h1>
-          </div>
-        </div>
-
-        <div class="row py-2">
-          <div class="col-lg-12 text-center">
-            <!-- <p class="lead">visual code scaffolding for the modern web</p> -->
-            <p class="lead">
-              Hand-crafted code scaffolding for the modern web
-            </p>
-            <p>
-              Prototype new web applications amazingly fast
-            </p>
-            <!-- <p>
-              Define your models, attributes, and relations - Codotype does the
-              rest
-            </p> -->
-          </div>
-
-          <div
-            class="col-lg-12 text-center d-flex align-items-center justify-content-center"
-          >
-            <gh-btns-star slug="codotype/codotype" show-count></gh-btns-star>
-          </div>
-        </div>
-
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-6">
-            <hr />
-          </div>
-          <div class="col-lg-12 text-center text-muted">
-            <p class="lead">
-              <!-- <font-awesome-icon icon="drafting-compass" /> -->
-              Select a generator to get started
-            </p>
-          </div>
-          <div class="col-lg-12">
-            <div class="card-columns">
-              <GeneratorCard :model="g1" />
-              <GeneratorCard :model="g2" />
-              <GeneratorCard :model="g3" />
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-2 mb-4 justify-content-center">
-          <div class="col-lg-4">
-            <b-button
-              to="/generators"
-              size="lg"
-              variant="outline-primary"
-              block
-            >
-              Browse Generators
-            </b-button>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <hr />
-          </div>
-        </div>
-
-        <div class="row mt-2 mb-4">
-          <div
-            v-for="section in infoSections"
-            :key="section.title"
-            class="col-lg-4 text-center"
-          >
-            <h4>{{ section.title }}</h4>
-            <p>{{ section.body }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div>
+    <Jumbotron :title="title" :subtitle="subtitle" :body="jumbotronText" />
+    <InfoSection :info-sections="infoSections" />
+    <Feature :features="features" />
+    <!-- <RegisterForm /> -->
+    <!-- <Generators /> -->
+    <!-- <Testimonials /> -->
+    <!-- <Pricing /> -->
+  </div>
 </template>
 
 <script>
 /* eslint-disable */
 
-import GeneratorCard from '@codotype/ui/src/modules/generator/components/GeneratorCard.vue'
-import generatorCollection from '~/assets/content/generators.json'
+// import Generators from '~/components/Generators.vue'
+// import Pricing from '~/components/Pricing.vue'
+// import Testimonials from '~/components/Testimonials.vue'
+// import Mockup from '~/components/Mockup.vue'
+import Jumbotron from '~/components/Jumbotron.vue'
+import RegisterForm from '~/components/RegisterForm.vue'
+import InfoSection from '~/components/InfoSections.vue'
+import Feature from '~/components/Feature.vue'
 import { createClient } from '~/plugins/contentful.js'
 
 const client = createClient()
@@ -95,27 +28,32 @@ const client = createClient()
 export default {
   async asyncData({ env }) {
     try {
-      const infoSections = await client.getEntries({
-        content_type: 'infoSection',
-        order: 'fields.order'
+      const response = await client.getEntries({
+        content_type: 'landingPage'
       })
 
+      const landingPage = response.items[0].fields
+
       return {
-        infoSections: infoSections.items.map(i => i.fields)
+        title: landingPage.title,
+        subtitle: landingPage.subtitle,
+        jumbotronText: landingPage.jumbotronText,
+        infoSections: landingPage.infoSections.map(i => i.fields),
+        features: landingPage.features.map(i => i.fields)
       }
     } catch (e) {
       console.error(e)
     }
   },
   components: {
-    GeneratorCard
-  },
-  data() {
-    return {
-      g1: generatorCollection[0],
-      g2: generatorCollection[1],
-      g3: generatorCollection[2],
-    }
+    Jumbotron,
+    Feature,
+    InfoSection,
+    // Generators,
+    // Pricing,
+    // Testimonials,
+    // RegisterForm,
+    // Mockup
   },
   head() {
     return {

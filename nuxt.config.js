@@ -12,10 +12,12 @@ export default {
     title: pkg.name,
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/png', href: 'https://res.cloudinary.com/codotype/image/upload/v1552257221/codotype-icons/favicon.png' }]
+    link: [{ rel: 'icon', type: 'image/png', href: 'https://res.cloudinary.com/codotype/image/upload/v1552257221/codotype-icons/favicon.png' }],
+    link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Product+Sans:300,400,700' }],
+    script: [{ src: 'https://code.jquery.com/jquery-3.4.1.min.js' }],
   },
 
   // Generate static pages for all generators
@@ -35,6 +37,7 @@ export default {
    */
   css: [
     '@/assets/sass/main.sass',
+    '@/assets/scss/style.scss',
     '@fortawesome/fontawesome-svg-core/styles.css',
   ],
 
@@ -47,7 +50,10 @@ export default {
     '~/plugins/jsonld.js',
     { src: '~plugins/ga.js', ssr: false },
     { src: '~plugins/hotjar.js', ssr: false },
-    { src: '~plugins/mailchimp.js', ssr: false }
+    { src: '~plugins/mailchimp.js', ssr: false },
+    { src: '~plugins/scroll.js', ssr: false },
+    // { src: '~plugins/testimonials.js', ssr: false },
+    // { src: '~plugins/youtube.js', ssr: false }
   ],
 
   /*
@@ -101,7 +107,10 @@ export default {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
+          options: {
+            fix: true
+          }
         })
       }
     }

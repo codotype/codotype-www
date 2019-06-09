@@ -1,6 +1,6 @@
 <template>
   <section class="container mt-4">
-    <GeneratorStart v-if="model" :model="model" :externalLink="externalLink" />
+    <GeneratorStart v-if="model" :model="model" :external-link="externalLink" />
   </section>
 </template>
 
