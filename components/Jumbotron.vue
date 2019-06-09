@@ -14,11 +14,11 @@
 
           <div class="row py-2">
             <div class="col-lg-12 d-flex flex-column">
-              <p>
-                <a href="#generators" class="btn btn-xl btn-outline-primary">
-                  Tell me more
-                </a>
-              </p>
+              <!-- <p> -->
+              <!-- <a href="#generators" class="btn btn-xl btn-outline-primary"> -->
+              <!-- Tell me more -->
+              <!-- </a> -->
+              <!-- </p> -->
               <gh-btns-star slug="codotype/codotype" show-count></gh-btns-star>
             </div>
           </div>

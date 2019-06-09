@@ -17,7 +17,6 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/png', href: 'https://res.cloudinary.com/codotype/image/upload/v1552257221/codotype-icons/favicon.png' }],
     link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Product+Sans:300,400,700' }],
-    script: [{ src: 'https://code.jquery.com/jquery-3.4.1.min.js' }],
   },
 
   // Generate static pages for all generators
@@ -51,7 +50,7 @@ export default {
     { src: '~plugins/ga.js', ssr: false },
     { src: '~plugins/hotjar.js', ssr: false },
     { src: '~plugins/mailchimp.js', ssr: false },
-    { src: '~plugins/scroll.js', ssr: false },
+    // { src: '~plugins/scroll.js', ssr: false },
     // { src: '~plugins/testimonials.js', ssr: false },
     // { src: '~plugins/youtube.js', ssr: false }
   ],
