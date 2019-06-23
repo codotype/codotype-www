@@ -19,7 +19,7 @@
     "version": "0.1.0",
     "experience": "Intermediate",
     "official": true,
-    "option_groups": [
+    "configuration_groups": [
       {
         "label": "Authorization",
         "identifier": "authorization",
@@ -461,7 +461,7 @@
     "version": "0.2.0",
     "official": true,
     "experience": "Beginner",
-    "option_groups": [
+    "configuration_groups": [
       {
         "id": "DEPLOYMENT_OPTION_GROUP",
         "label": "Deployment",
@@ -509,7 +509,7 @@
     "version": "0.1.0",
     "official": true,
     "experience": "Intermediate",
-    "option_groups": [
+    "configuration_groups": [
       {
         "id": "DEPLOYMENT_OPTION_GROUP",
         "label": "Deployment",
