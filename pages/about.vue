@@ -1,99 +1,29 @@
 <template>
   <div class="row">
     <div class="col-lg-12">
-      <div class="row mt-4">
-        <div class="col-lg-12 text-center">
-          <img
-            class="mb-2"
-            width="100px"
-            height="100px"
-            src="https://res.cloudinary.com/codotype/image/upload/v1560045005/tech-logos/codotype.png"
-          />
-          <h1 class="display-1">Codotype</h1>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <p class="lead">
-            visual code scaffolding for the modern web
-          </p>
-          <p>
-            Prototype new web applications amazingly fast
-          </p>
-          <p>
-            Define your models, attributes, and relations - Codotype does the
-            rest
-          </p>
-        </div>
-
-        <div
-          class="col-lg-12 text-center d-flex flex-column align-items-center"
-        >
-          <gh-btns-star slug="codotype/codotype" show-count />
-
-          <br />
-
-          <p class="lead mb-0 mt-2">
-            <span>Built with </span>
-            <font-awesome-icon icon="heart" class="text-danger" />
-            <span class="px-1">by</span>
-            <a href="https://github.com/aeksco" target="_blank">@aeksco</a>
-          </p>
-
-          <gh-btns-follow class="mt-3" user="aeksco" show-count />
-        </div>
-      </div>
+      <AboutJumbotron />
+      <AboutBody />
+      <AboutAttribution svg />
     </div>
   </div>
 </template>
 
 <script>
+import AboutJumbotron from '@codotype/ui/src/components/About/AboutJumbotron.vue'
+import AboutBody from '@codotype/ui/src/components/About/AboutBody.vue'
+import AboutAttribution from '@codotype/ui/src/components/About/AboutAttribution.vue'
+import { getPageMeta } from '~/assets/meta.js'
+
 export default {
+  components: {
+    AboutJumbotron,
+    AboutBody,
+    AboutAttribution
+  },
   head() {
     return {
       title: 'Codotype - About',
-      meta: [
-        {
-          property: 'twitter:card',
-          content: 'summary'
-        },
-        {
-          property: 'twitter:site',
-          value: '@codotype'
-        },
-        {
-          property: 'twitter:creator',
-          value: '@aeksco'
-        },
-        {
-          hid: 'description',
-          name: 'description',
-          content:
-            'Instantly generate full-stack boilerplate code with custom CRUD.'
-        },
-        {
-          property: 'og:url',
-          content: 'https://codotype.io/about'
-        },
-        {
-          property: 'og:type',
-          content: 'website'
-        },
-        {
-          property: 'og:title',
-          content: 'Codotype - Building Better Boilerplate'
-        },
-        {
-          property: 'og:description',
-          content:
-            'Instantly generate full-stack boilerplate code with custom CRUD.'
-        },
-        {
-          property: 'og:image',
-          content: 'https://avatars2.githubusercontent.com/u/42126198?s=200&v=4'
-        }
-      ]
+      meta: getPageMeta({ url: 'https://codotype.io/about' })
     }
   }
 }

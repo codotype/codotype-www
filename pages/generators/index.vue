@@ -66,6 +66,7 @@
 <script>
 import GeneratorListItem from '@codotype/ui/src/modules/generator/components/GeneratorListItem.vue'
 import generatorCollection from '~/assets/content/generators.json'
+import { getPageMeta } from '~/assets/meta.js'
 
 export default {
   components: {
@@ -74,47 +75,7 @@ export default {
   head() {
     return {
       title: 'Codotype - Generators',
-      meta: [
-        {
-          property: 'twitter:card',
-          content: 'summary'
-        },
-        {
-          property: 'twitter:site',
-          value: '@codotype'
-        },
-        {
-          property: 'twitter:creator',
-          value: '@aeksco'
-        },
-        {
-          hid: 'description',
-          name: 'description',
-          content:
-            'Instantly generate full-stack boilerplate code with custom CRUD.'
-        },
-        {
-          property: 'og:url',
-          content: 'https://codotype.io/about'
-        },
-        {
-          property: 'og:type',
-          content: 'website'
-        },
-        {
-          property: 'og:title',
-          content: 'Codotype - Building Better Boilerplate'
-        },
-        {
-          property: 'og:description',
-          content:
-            'Instantly generate full-stack boilerplate code with custom CRUD.'
-        },
-        {
-          property: 'og:image',
-          content: 'https://avatars2.githubusercontent.com/u/42126198?s=200&v=4'
-        }
-      ]
+      meta: getPageMeta({})
     }
   },
   data() {
