@@ -85,17 +85,17 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/scss/style.scss';
+@import '@/assets/sass/main.sass';
 
 .footer-links {
   li {
     padding: 0.2em 0;
   }
   a {
-    color: $gray-light;
+    color: $gray-600;
     &:hover {
       text-decoration: none;
-      color: $brand-primary;
+      color: $blue;
     }
   }
 }

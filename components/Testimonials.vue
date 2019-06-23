@@ -67,7 +67,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/scss/style.scss';
+@import '@/assets/sass/main.sass';
 
 .embed_twitter iframe {
   margin: 0 auto !important;

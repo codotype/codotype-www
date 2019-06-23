@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section bg-white">
     <div class="container">
       <div class="row">
         <div
@@ -38,5 +38,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/scss/style.scss';
+@import '@/assets/sass/main.sass';
 </style>

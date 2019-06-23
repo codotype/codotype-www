@@ -70,15 +70,15 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/scss/style.scss';
+@import '@/assets/sass/main.sass';
 
-.card {
-  transition: all 0.3s ease;
-  &:hover {
-    margin-top: -5px;
-    box-shadow: 0 10px 40px rgba($black, 0.05);
-  }
-}
+// .card {
+//   transition: all 0.3s ease;
+//   &:hover {
+//     margin-top: -5px;
+//     box-shadow: 0 10px 40px rgba($black, 0.05);
+//   }
+// }
 
 .pricing {
   text-align: center;

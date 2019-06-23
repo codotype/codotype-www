@@ -1,5 +1,5 @@
 <template>
-  <div id="signup" class="section">
+  <div id="signup" class="section bg-white">
     <div class="container">
       <div class="section-title text-center">
         <h3>Start your free trial</h3>
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/scss/style.scss';
+@import '@/assets/sass/main.sass';
 .form-control {
   height: 50px;
   border-radius: 30px;

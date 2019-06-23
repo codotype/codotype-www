@@ -1,5 +1,5 @@
 <template>
-  <section class="jumbotron-two">
+  <section class="jumbotron-splash">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-md-5">
@@ -24,7 +24,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-7 my-3 my-md-lg">
+        <div class="col-12 col-md-7 my-3 my-md-5 py-md-4">
           <div class="card-deck">
             <GeneratorCard :model="generators[0]" />
             <GeneratorCard :model="generators[1]" />
@@ -35,6 +35,7 @@
               <b-button
                 to="/generators"
                 size="lg"
+                class="rounded-pill"
                 variant="outline-primary"
                 block
               >
@@ -93,68 +94,66 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import '@/assets/scss/style.scss';
+<style lang="sass">
+@import '@/assets/sass/main.sass';
 
-.jumbotron-two {
-  padding: 2rem 0;
-  .lead {
-    max-width: 500px;
-    margin: 0;
-  }
-}
+.display-5
+  font-size: 2rem
+  font-weight: 300
+  line-height: 1.5
+
+.jumbotron-splash
+  padding: 2rem 0
+  color: #3e396b
+  .lead
+    max-width: 500px
+    margin: 0
 
 // /*-----------------------------------
 //  * YOUTUBE VIDEO
 //  *-----------------------------------*/
 
-iframe {
-  display: block;
-}
+iframe
+  display: block
 
-.youtube {
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden;
-  transition: all 200ms ease-out;
-  cursor: pointer;
-}
+.youtube
+  background-position: center
+  background-repeat: no-repeat
+  position: relative
+  overflow: hidden
+  transition: all 200ms ease-out
+  cursor: pointer
 
-.youtube .play {
-  background: #fff;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 9px 68px 0px rgba(62, 57, 107, 0.2);
-  text-align: center;
-  padding: 17px 20px;
-  span {
-    color: $brand-primary;
-  }
-}
+.youtube .play
+  background: #fff
+  border-radius: 50%
+  width: 80px
+  height: 80px
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  box-shadow: 0px 9px 68px 0px rgba(62, 57, 107, 0.2)
+  text-align: center
+  padding: 17px 20px
+  span
+    color: $blue
 
-.bg-video video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translateX(-50%) translateY(-50%);
-  // background: url('../images/agency/poster.jpg') no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
-}
+.bg-video video
+  position: absolute
+  top: 50%
+  left: 50%
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
+  transform: translateX(-50%) translateY(-50%)
+  // background: url('../images/agency/poster.jpg') no-repeat
+  background-size: cover
+  transition: 1s opacity
 
-.bg-video.align-bottom video {
-  top: auto;
-  bottom: 0;
-  transform: translateX(-50%) translateY(0);
-}
+.bg-video.align-bottom video
+  top: auto
+  bottom: 0
+  transform: translateX(-50%) translateY(0)
 </style>

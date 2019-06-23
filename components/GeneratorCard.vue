@@ -27,17 +27,24 @@
     <div class="card-footer bg-white border-top-none">
       <nuxt-link
         :to="`/generators/${model.id}`"
-        class="btn btn-block btn-xl btn-primary"
+        class="btn btn-block btn-xl btn-primary rounded-pill"
       >
-        Use Generator
+        <span class="d-flex justify-content-center align-items-center">
+          Let's Go!
+          <ChevronAnimation active svg />
+        </span>
       </nuxt-link>
     </div>
   </div>
 </template>
 
 <script>
+import ChevronAnimation from '@codotype/ui/src/components/ChevronAnimation.vue'
 export default {
   name: 'GeneratorCard',
+  components: {
+    ChevronAnimation
+  },
   props: {
     model: {
       type: Object,

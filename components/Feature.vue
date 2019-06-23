@@ -1,5 +1,5 @@
 <template>
-  <div id="features" class="section">
+  <div id="features" class="section bg-white">
     <div class="container">
       <div
         v-for="each in features"
@@ -75,7 +75,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/scss/style.scss';
+@import '@/assets/sass/main.sass';
 .browser-window {
   display: inline-block;
   text-align: left;
@@ -138,10 +138,10 @@ export default {
 
 .media-icon i {
   min-width: 50px;
-  color: $brand-primary;
+  color: $blue;
 }
 
 .color-icon i {
-  color: $brand-primary;
+  color: $blue;
 }
 </style>
