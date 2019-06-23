@@ -36,7 +36,6 @@ export default {
    */
   css: [
     '@/assets/sass/main.sass',
-    '@/assets/scss/style.scss',
     '@fortawesome/fontawesome-svg-core/styles.css',
   ],
 

@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faTwitter, faGithub, faOsi } from '@fortawesome/free-brands-svg-icons'
 import {
   faBook,
+  faCog,
+  faArrowRight,
+  faChevronRight,
   faDollarSign,
   faHeart,
   faInfoCircle,
@@ -23,6 +26,9 @@ config.autoAddCss = false
 
 // FontAwesome Core Icons
 library.add(faBook)
+library.add(faCog)
+library.add(faArrowRight)
+library.add(faChevronRight)
 library.add(faDollarSign)
 library.add(faHeart)
 library.add(faInfoCircle)
