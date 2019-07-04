@@ -27,8 +27,12 @@
               variant="outline-warning"
               @click="clearFilter()"
             >
-              <font-awesome-icon icon="times" />
-              Clear Filter
+              <span
+                class="d-flex flex-row align-items-center justify-content-center"
+              >
+                <font-awesome-icon icon="times" class="mr-2" />
+                Clear Filter
+              </span>
             </b-button>
           </b-col>
         </b-row>
