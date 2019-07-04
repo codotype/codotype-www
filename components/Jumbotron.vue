@@ -39,6 +39,7 @@
                 variant="outline-primary"
                 block
               >
+                <font-awesome-icon icon="search" class="mr-1" />
                 Browse Generators
               </b-button>
             </div>

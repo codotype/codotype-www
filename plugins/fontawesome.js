@@ -3,18 +3,19 @@ import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faTwitter, faGithub, faOsi } from '@fortawesome/free-brands-svg-icons'
 import {
-  faBook,
-  faCog,
   faArrowRight,
+  faBook,
   faChevronRight,
+  faCog,
   faDollarSign,
   faHeart,
   faInfoCircle,
-  faQuestionCircle,
-  faShippingFast,
-  faTimes,
   faProjectDiagram,
-  faTasks
+  faQuestionCircle,
+  faSearch,
+  faShippingFast,
+  faTasks,
+  faTimes
 } from '@fortawesome/free-solid-svg-icons'
 
 // This is important, we are going to let Nuxt.js worry about the CSS
@@ -34,6 +35,7 @@ library.add(faHeart)
 library.add(faInfoCircle)
 library.add(faQuestionCircle)
 library.add(faShippingFast)
+library.add(faSearch)
 library.add(faTimes)
 library.add(faProjectDiagram)
 library.add(faTasks)
