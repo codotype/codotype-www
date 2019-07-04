@@ -40,19 +40,32 @@
                 v-for="m in generators"
                 :key="m.id"
                 :model="m"
+                :svg="true"
               />
             </transition-group>
           </b-col>
 
           <b-col lg="12">
-            <div class="card py-2 my-2 border-dark bg-transparent">
+            <div class="card py-2 my-2 border-secondary bg-transparent">
               <div class="card-body text-center">
                 <font-awesome-icon size="lg" icon="info-circle" />
                 <p class="mb-0 mt-2">
-                  Looking for something we don"t support?
+                  Looking for something we don't support?
                   <br />
-                  Take a look at our roadmap or vote for upcoming features
-                  <!-- Open an issue or leave feedback here -->
+                  Vote for
+                  <a
+                    href="https://github.com/codotype/feature-requests/issues"
+                    target="_blank"
+                  >
+                    upcoming features
+                  </a>
+                  or open a
+                  <a
+                    href="https://github.com/codotype/feature-requests/issues/new"
+                    target="_blank"
+                  >
+                    new request
+                  </a>
                 </p>
               </div>
             </div>

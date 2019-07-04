@@ -24,7 +24,7 @@
         "label": "Authorization",
         "identifier": "authorization",
         "description": "Configure the User Authorization methods for your app",
-        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "type": "CONFIGURATION_GROUP_TYPE_GLOBAL_OPTION",
         "more_info_url": "http://apidocjs.com",
         "attributes": [
           {
@@ -118,7 +118,7 @@
         "identifier": "api_examples",
         "description": "Configure which API examples are included with your app",
         "help": "Which API Examples would you like included with your boilerplate?",
-        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "type": "CONFIGURATION_GROUP_TYPE_GLOBAL_OPTION",
         "more_info_url": "http://apidocjs.com",
         "attributes": [
           {
@@ -367,7 +367,7 @@
         "label": "Features",
         "identifier": "features",
         "description": "Enable specific features in your app",
-        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "type": "CONFIGURATION_GROUP_TYPE_GLOBAL_OPTION",
         "attributes": [
           {
             "label": "Google Analytics",
@@ -423,7 +423,7 @@
         "label": "Documentation",
         "identifier": "documentation",
         "description": "Configure the User Authorization methods for your app",
-        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "type": "CONFIGURATION_GROUP_TYPE_GLOBAL_OPTION",
         "attributes": [
           {
             "label": "Generate APIDoc Documentation Headers",
@@ -467,7 +467,7 @@
         "label": "Deployment",
         "identifier": "deployment",
         "description": "Configure the deployment options for your app",
-        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "type": "CONFIGURATION_GROUP_TYPE_GLOBAL_OPTION",
         "more_info_url": null,
         "attributes": [
           {
@@ -515,7 +515,7 @@
         "label": "Deployment",
         "identifier": "deployment",
         "description": "Configure the deployment options for your app",
-        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "type": "CONFIGURATION_GROUP_TYPE_GLOBAL_OPTION",
         "more_info_url": null,
         "attributes": [
           {
@@ -537,7 +537,7 @@
         "label": "Documentation",
         "identifier": "documentation",
         "description": "Configure the documentation options for your code",
-        "type": "OPTION_GROUP_TYPE_GLOBAL_OPTION",
+        "type": "CONFIGURATION_GROUP_TYPE_GLOBAL_OPTION",
         "more_info_url": null,
         "attributes": [
           {
@@ -563,7 +563,7 @@
         "class_name": "ApiAction",
         "class_name_plural": "ApiActions",
         "description": "Add individual RESTful API actions to your models",
-        "type": "OPTION_GROUP_TYPE_MODEL_ADDON",
+        "type": "CONFIGURATION_GROUP_TYPE_MODEL_ADDON",
         "previewTemplate": "<small><pre class='bg-dark text-light mb-0' v-if='model.scope === \"COLLECTION\"'>{{model.verb}} /{{ schema.identifier_plural }}/{{model.uri}} - {{ model.function_name }}()</pre><pre class='bg-dark text-light mb-0' v-else>{{model.verb}} /{{ schema.identifier_plural }}/:{{ schema.identifier }}_id/{{model.uri}} - {{ model.function_name }}()</pre></small>",
         "more_info_url": null,
         "attributes": [
