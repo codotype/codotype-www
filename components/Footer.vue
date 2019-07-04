@@ -18,7 +18,6 @@
             </p>
           </span>
         </div>
-        <!-- // end .col-sm-3 -->
         <div class="col-sm-2">
           <ul class="list-unstyled footer-links ml-1">
             <li>
@@ -33,7 +32,6 @@
             </li>
           </ul>
         </div>
-        <!-- // end .col-sm-3 -->
         <div class="col-sm-2">
           <ul class="list-unstyled footer-links ml-1">
             <li>
@@ -41,9 +39,13 @@
                 About
               </nuxt-link>
             </li>
+            <li>
+              <nuxt-link to="/faq">
+                FAQ
+              </nuxt-link>
+            </li>
           </ul>
         </div>
-        <!-- // end .col-sm-3 -->
         <div class="col-sm-2">
           <ul class="list-unstyled footer-links ml-1">
             <li>
@@ -58,15 +60,12 @@
             </li>
           </ul>
         </div>
-        <!-- // end .col-sm-3 -->
         <div class="col-sm-2">
           <a href="#home" class="btn btn-sm btn-outline-primary ml-1">
             Go to Top
           </a>
         </div>
-        <!-- // end .col-sm-3 -->
       </div>
-      <!-- // end .row -->
       <div class="text-center mt-4">
         <small class="text-muted">
           Copyright © {{ new Date().getFullYear() }}
@@ -74,7 +73,6 @@
         </small>
       </div>
     </div>
-    <!-- // end .container -->
   </div>
 </template>
 
