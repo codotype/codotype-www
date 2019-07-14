@@ -25,15 +25,15 @@
     </div>
 
     <div class="card-footer bg-white border-top-none">
-      <nuxt-link
-        :to="`/generators/${model.id}`"
+      <a
+        :href="externalLink"
         class="btn btn-block btn-xl btn-primary rounded-pill"
       >
         <span class="d-flex justify-content-center align-items-center">
           Let's Go!
           <ChevronAnimation active svg />
         </span>
-      </nuxt-link>
+      </a>
     </div>
   </div>
 </template>
@@ -49,6 +49,12 @@ export default {
     model: {
       type: Object,
       required: true
+    }
+  },
+  computed: {
+    externalLink() {
+      const id = this.model.id
+      return process.env.CODOTYPE_APP_HOST + `/generators/${id}/build`
     }
   }
 }

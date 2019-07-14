@@ -26,8 +26,8 @@
 
         <div class="col-12 col-md-7 my-3 my-md-5 py-md-4">
           <div class="card-deck">
-            <GeneratorCard :model="generators[0]" />
             <GeneratorCard :model="generators[1]" />
+            <GeneratorCard :model="generators[0]" />
           </div>
 
           <div class="row mt-4 d-flex justify-content-center">
