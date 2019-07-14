@@ -21,6 +21,10 @@ export function getPageMeta({ url, description, title }) {
       value: '@aeksco'
     },
     {
+      property: 'twitter:image',
+      content: 'https://avatars2.githubusercontent.com/u/42126198?s=200&v=4'
+    },
+    {
       hid: 'description',
       name: 'description',
       content: desc
@@ -47,7 +51,8 @@ export function getPageMeta({ url, description, title }) {
     },
     {
       property: 'og:image',
-      content: 'https://avatars2.githubusercontent.com/u/42126198?s=200&v=4'
+      content:
+        'https://res.cloudinary.com/codotype/image/upload/v1563148543/product-images/thumbnail.png'
     }
   ]
 }
